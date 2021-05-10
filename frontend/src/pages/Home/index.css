@@ -1,0 +1,12 @@
+.products {
+    display: flex;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+

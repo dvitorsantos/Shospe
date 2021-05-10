@@ -1,0 +1,17 @@
+.left-options {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.stars img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
