@@ -1,7 +1,7 @@
 import React from 'react';
 import { logout, isAuthenticated } from '../../services/auth'
 
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './index.css'
 
@@ -15,6 +15,7 @@ class NavBar extends React.Component {
 
     handleClickLogout() {
         logout()
+        window.location.reload();
     }
 
     profileSettings() {
@@ -27,7 +28,8 @@ class NavBar extends React.Component {
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <Link class="dropdown-item" to="/profile">Meu Perfil</Link>
                         <Link class="dropdown-item" to="/orders">Meus Pedidos</Link>
-                        <li><a class="dropdown-item" onClick={this.handleClickLogout}>Sair</a></li>
+                        <li ><button class="dropdown-item" onClick={this.handleClickLogout}>Sair</button>
+                        </li>
                     </ul>
                 </div>
             )
